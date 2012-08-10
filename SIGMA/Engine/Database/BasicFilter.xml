@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<filter>
+
+  <tables>
+
+    <!-- Default Deny -->
+    <deny tableName=".*" />
+
+    <allow tableName="^geninfo$" />
+    <allow tableName="^arp.*$" />
+    <allow tableName="^eth.*$" />
+    <allow tableName="^ip.*$" />
+    <allow tableName="^tcp.*$" />
+    <allow tableName="^udp.*$" />
+    <allow tableName="^icmp.*$" />
+    <allow tableName="^dns.*$" />
+    <allow tableName="^http.*$" />
+    <allow tableName="^media.*$" />
+    <allow tableName="^image.*$" />
+    <allow tableName="^ftp.*$" />
+    <allow tableName="^tftp.*$" />
+    <allow tableName="^smtp.*$" />
+    <allow tableName="^pop.*$" />
+    <allow tableName="^imap.*$" />
+    <allow tableName="^imf.*$" />
+    <allow tableName="^ssl.*$" />
+    <allow tableName="^ssh.*$" />
+    <allow tableName="^telnet.*$" />
+    <allow tableName="^x11.*$" />
+    <allow tableName="^umts.*$" />
+    <allow tableName="^dhcp.*$" />
+    <allow tableName="^nntp.*$" />
+    <allow tableName="^smb.*$" />
+    <allow tableName="^mailslot.*$" />
+    <allow tableName="^nbdgm.*$" />
+    <allow tableName="^nbns.*$" />
+    <allow tableName="^exec.*$" />    
+    <allow tableName="^messenger.*$" />
+    <allow tableName="^msnms.*$" />
+    <allow tableName="^irc.*$" />
+
+    <!-- RDP Transport Layer -->
+    <allow tableName="^x224*$" />
+    <allow tableName="^tpkt*$" />
+
+  </tables>
+  
+  <columns>
+
+    <!-- Default Allow -->
+    <allow tableName=".*" columnName=".*" />
+
+  </columns>
+
+</filter>
